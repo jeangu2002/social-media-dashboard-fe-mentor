@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32-DQjEQYWa.png"
+    />
+
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" crossorigin href="/assets/index-D4-DfcSy.css">
+  </head>
+  <body
+    class="flex flex-col justify-center items-center w-screen min-h-screen dark:bg-black dark:text-white font-inter"
+  >
+    <main>
+      <div class="container dark:bg-dark-blue px-24 py-4">
+        <div class="flex items-center justify-between my-10">
+          <!-- HEADING -->
+          <div class="flex flex-col">
+            <h1 class="font-bold text-2xl">Social Media Dashboard</h1>
+            <p class="text-desaturate-blue text-xs font-bold">Total Followers: <span>23,004</span></p>
+          </div>
+          <!-- DARK MODE SWITCH -->
+          <div class="flex items-center">
+            <label for="dark-mode-switch" class="flex relative gap-4 font-bold after:w-[35px] after:content-[''] after:h-[20px] after:order-2 
+            after:rounded-full before:content-[''] before:h-[15px] before:w-[15px] before:z-10 before:dark:bg-black before:bg-white before:absolute before:right-0 before:top-[calc(10px_-_7.5px)] before:rounded-full
+             after:bg-gradient-toggle"  id="dark-mode-switch-checkbox"> Dark Mode</label>
+            <input class="hidden"
+              type="checkbox"
+              name="dark-mode-switch"
+            />
+          </div>
+        </div>
+        <!-- CARDS -->
+        <div class="grid gap-8 grid-cols-auto-fit [&_img]:object-contain lg:min-w-[1000px] [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
+          
+            <div class="flex flex-col items-center  rounded-md dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6 border-facebook border-t-4  card gap-6">
+              <div class="flex gap-2">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23178FF5'%20d='M18.896%200H1.104C.494%200%200%20.494%200%201.104v17.793C0%2019.506.494%2020%201.104%2020h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583%201.578-3.99%203.883-3.99%201.104%200%202.052.082%202.329.119v2.7h-1.598c-1.254%200-1.496.597-1.496%201.47v1.928h2.989l-.39%203.018h-2.6V20h5.098c.608%200%201.102-.494%201.102-1.104V1.104C20%20.494%2019.506%200%2018.896%200z'/%3e%3c/svg%3e" alt="fabook icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@nathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue">
+                <span class="font-bold text-4xl text-black dark:text-white">1987</span> <br />
+                <span class="tracking-[.2em] text-xs">followers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-lime-green font-bold">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" /> 12 Today
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center  rounded-md dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6 border-facebook border-t-4  card gap-6">
+              <div class="flex gap-2">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23178FF5'%20d='M18.896%200H1.104C.494%200%200%20.494%200%201.104v17.793C0%2019.506.494%2020%201.104%2020h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583%201.578-3.99%203.883-3.99%201.104%200%202.052.082%202.329.119v2.7h-1.598c-1.254%200-1.496.597-1.496%201.47v1.928h2.989l-.39%203.018h-2.6V20h5.098c.608%200%201.102-.494%201.102-1.104V1.104C20%20.494%2019.506%200%2018.896%200z'/%3e%3c/svg%3e" alt="fabook icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@nathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue">
+                <span class="font-bold text-4xl text-black dark:text-white">1044</span> <br />
+                <span class="tracking-[.2em] text-xs">followers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-lime-green font-bold">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" /> 99 Today
+              </div>
+            </div>
+            <div class="flex flex-col items-center dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6  rounded-md px-8 py-6 border-facebook border-t-4 [border-image:linear-gradient(90deg,_hsl(37,_97%,_70%),hsl(329,_70%,_58%))] [border-image-slice:_1_!important]  card gap-6">
+              <div class="flex gap-2">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cdefs%3e%3clinearGradient%20id='a'%20x1='100%25'%20x2='0%25'%20y1='0%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23DF4896'/%3e%3cstop%20offset='50.913%25'%20stop-color='%23EE877E'/%3e%3cstop%20offset='100%25'%20stop-color='%23FDC366'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20fill='url(%23a)'%20d='M10%201.802c2.67%200%202.987.01%204.042.059%202.71.123%203.975%201.409%204.099%204.099.048%201.054.057%201.37.057%204.04%200%202.672-.01%202.988-.057%204.042-.124%202.687-1.387%203.975-4.1%204.099-1.054.048-1.37.058-4.041.058-2.67%200-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041%200-2.67.01-2.986.058-4.04.124-2.69%201.387-3.977%204.1-4.1%201.054-.048%201.37-.058%204.04-.058zM10%200C7.284%200%206.944.012%205.878.06%202.246.227.228%202.242.06%205.877.01%206.944%200%207.284%200%2010s.012%203.057.06%204.123c.167%203.632%202.182%205.65%205.817%205.817%201.067.048%201.407.06%204.123.06s3.057-.012%204.123-.06c3.629-.167%205.652-2.182%205.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777%202.249%2017.76.228%2014.124.06%2013.057.01%2012.716%200%2010%200zm0%204.865a5.135%205.135%200%20100%2010.27%205.135%205.135%200%20000-10.27zm0%208.468a3.333%203.333%200%20110-6.666%203.333%203.333%200%20010%206.666zm5.338-9.87a1.2%201.2%200%20100%202.4%201.2%201.2%200%20000-2.4z'/%3e%3c/svg%3e" alt="fabook icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@realnathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue text-center">
+                <span class="font-bold text-4xl text-black dark:text-white">11K</span> <br />
+                <span class="tracking-[.2em] text-xs">followers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-lime-green font-bold">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" /> 1099 Today
+              </div>
+            </div>
+            <div class="flex flex-col items-center dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6  rounded-md px-8 py-6 border-t-4 border-t-bright-red  card gap-6">
+              <div class="flex gap-2">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23C4032B'%20d='M10%200C4.478%200%200%204.478%200%2010c0%205.523%204.478%2010%2010%2010%205.523%200%2010-4.477%2010-10%200-5.522-4.477-10-10-10zm3.7%2014.077c-1.75.12-5.652.12-7.402%200-1.896-.13-2.117-1.059-2.131-4.077.014-3.024.237-3.947%202.131-4.077%201.75-.12%205.652-.12%207.403%200%201.897.13%202.117%201.059%202.132%204.077-.015%203.024-.237%203.947-2.132%204.077zM8.334%208.048l4.098%201.949-4.098%201.955V8.048z'/%3e%3c/svg%3e" alt="youtube icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@realnathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue text-center">
+                <span class="font-bold text-4xl text-black dark:text-white">8239</span> <br />
+                <span class="tracking-[.2em] text-xs">subscribers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-bright-red font-bold">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%23DC414C'%20fill-rule='evenodd'%20d='M0%200l4%204%204-4z'/%3e%3c/svg%3e" alt="icon up" /> 144 Today
+              </div>
+            </div>
+          
+        
+        </div>
+
+        <!-- OVERVIEW-->
+        <h2 class="font-bold mb-4 mt-12">Overview Today</h2>
+        <div class="grid grid-cols-auto-fit justify-items-start gap-8 [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Page views</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23178FF5'%20d='M18.896%200H1.104C.494%200%200%20.494%200%201.104v17.793C0%2019.506.494%2020%201.104%2020h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583%201.578-3.99%203.883-3.99%201.104%200%202.052.082%202.329.119v2.7h-1.598c-1.254%200-1.496.597-1.496%201.47v1.928h2.989l-.39%203.018h-2.6V20h5.098c.608%200%201.102-.494%201.102-1.104V1.104C20%20.494%2019.506%200%2018.896%200z'/%3e%3c/svg%3e" alt="" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">87</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-lime-green">3%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Likes</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23178FF5'%20d='M18.896%200H1.104C.494%200%200%20.494%200%201.104v17.793C0%2019.506.494%2020%201.104%2020h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583%201.578-3.99%203.883-3.99%201.104%200%202.052.082%202.329.119v2.7h-1.598c-1.254%200-1.496.597-1.496%201.47v1.928h2.989l-.39%203.018h-2.6V20h5.098c.608%200%201.102-.494%201.102-1.104V1.104C20%20.494%2019.506%200%2018.896%200z'/%3e%3c/svg%3e" alt="" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">52</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%23DC414C'%20fill-rule='evenodd'%20d='M0%200l4%204%204-4z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-bright-red">2%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Page views</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cdefs%3e%3clinearGradient%20id='a'%20x1='100%25'%20x2='0%25'%20y1='0%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23DF4896'/%3e%3cstop%20offset='50.913%25'%20stop-color='%23EE877E'/%3e%3cstop%20offset='100%25'%20stop-color='%23FDC366'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20fill='url(%23a)'%20d='M10%201.802c2.67%200%202.987.01%204.042.059%202.71.123%203.975%201.409%204.099%204.099.048%201.054.057%201.37.057%204.04%200%202.672-.01%202.988-.057%204.042-.124%202.687-1.387%203.975-4.1%204.099-1.054.048-1.37.058-4.041.058-2.67%200-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041%200-2.67.01-2.986.058-4.04.124-2.69%201.387-3.977%204.1-4.1%201.054-.048%201.37-.058%204.04-.058zM10%200C7.284%200%206.944.012%205.878.06%202.246.227.228%202.242.06%205.877.01%206.944%200%207.284%200%2010s.012%203.057.06%204.123c.167%203.632%202.182%205.65%205.817%205.817%201.067.048%201.407.06%204.123.06s3.057-.012%204.123-.06c3.629-.167%205.652-2.182%205.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777%202.249%2017.76.228%2014.124.06%2013.057.01%2012.716%200%2010%200zm0%204.865a5.135%205.135%200%20100%2010.27%205.135%205.135%200%20000-10.27zm0%208.468a3.333%203.333%200%20110-6.666%203.333%203.333%200%20010%206.666zm5.338-9.87a1.2%201.2%200%20100%202.4%201.2%201.2%200%20000-2.4z'/%3e%3c/svg%3e" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">5462</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-lime-green">2257%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Profile views</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cdefs%3e%3clinearGradient%20id='a'%20x1='100%25'%20x2='0%25'%20y1='0%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23DF4896'/%3e%3cstop%20offset='50.913%25'%20stop-color='%23EE877E'/%3e%3cstop%20offset='100%25'%20stop-color='%23FDC366'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20fill='url(%23a)'%20d='M10%201.802c2.67%200%202.987.01%204.042.059%202.71.123%203.975%201.409%204.099%204.099.048%201.054.057%201.37.057%204.04%200%202.672-.01%202.988-.057%204.042-.124%202.687-1.387%203.975-4.1%204.099-1.054.048-1.37.058-4.041.058-2.67%200-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041%200-2.67.01-2.986.058-4.04.124-2.69%201.387-3.977%204.1-4.1%201.054-.048%201.37-.058%204.04-.058zM10%200C7.284%200%206.944.012%205.878.06%202.246.227.228%202.242.06%205.877.01%206.944%200%207.284%200%2010s.012%203.057.06%204.123c.167%203.632%202.182%205.65%205.817%205.817%201.067.048%201.407.06%204.123.06s3.057-.012%204.123-.06c3.629-.167%205.652-2.182%205.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777%202.249%2017.76.228%2014.124.06%2013.057.01%2012.716%200%2010%200zm0%204.865a5.135%205.135%200%20100%2010.27%205.135%205.135%200%20000-10.27zm0%208.468a3.333%203.333%200%20110-6.666%203.333%203.333%200%20010%206.666zm5.338-9.87a1.2%201.2%200%20100%202.4%201.2%201.2%200%20000-2.4z'/%3e%3c/svg%3e" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">52K</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-lime-green">1375%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Retweets</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='17'%3e%3cpath%20fill='%231DA1F2'%20d='M20%201.924a8.192%208.192%200%2001-2.357.646A4.11%204.11%200%200019.448.3a8.22%208.22%200%2001-2.606.996A4.096%204.096%200%200013.847%200c-2.65%200-4.596%202.472-3.998%205.037A11.648%2011.648%200%20011.392.752a4.109%204.109%200%20001.27%205.478%204.086%204.086%200%2001-1.858-.513C.76%207.616%202.122%209.395%204.095%209.79a4.113%204.113%200%2001-1.853.07%204.106%204.106%200%20003.833%202.849A8.25%208.25%200%20010%2014.41a11.616%2011.616%200%20006.29%201.843c7.618%200%2011.922-6.434%2011.663-12.205A8.354%208.354%200%200020%201.924z'/%3e%3c/svg%3e" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">117</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-lime-green">303%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Likes</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='17'%3e%3cpath%20fill='%231DA1F2'%20d='M20%201.924a8.192%208.192%200%2001-2.357.646A4.11%204.11%200%200019.448.3a8.22%208.22%200%2001-2.606.996A4.096%204.096%200%200013.847%200c-2.65%200-4.596%202.472-3.998%205.037A11.648%2011.648%200%20011.392.752a4.109%204.109%200%20001.27%205.478%204.086%204.086%200%2001-1.858-.513C.76%207.616%202.122%209.395%204.095%209.79a4.113%204.113%200%2001-1.853.07%204.106%204.106%200%20003.833%202.849A8.25%208.25%200%20010%2014.41a11.616%2011.616%200%20006.29%201.843c7.618%200%2011.922-6.434%2011.663-12.205A8.354%208.354%200%200020%201.924z'/%3e%3c/svg%3e" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">52</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%23DC414C'%20fill-rule='evenodd'%20d='M0%200l4%204%204-4z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-bright-red">3%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Likes</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cdefs%3e%3clinearGradient%20id='a'%20x1='100%25'%20x2='0%25'%20y1='0%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23DF4896'/%3e%3cstop%20offset='50.913%25'%20stop-color='%23EE877E'/%3e%3cstop%20offset='100%25'%20stop-color='%23FDC366'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20fill='url(%23a)'%20d='M10%201.802c2.67%200%202.987.01%204.042.059%202.71.123%203.975%201.409%204.099%204.099.048%201.054.057%201.37.057%204.04%200%202.672-.01%202.988-.057%204.042-.124%202.687-1.387%203.975-4.1%204.099-1.054.048-1.37.058-4.041.058-2.67%200-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041%200-2.67.01-2.986.058-4.04.124-2.69%201.387-3.977%204.1-4.1%201.054-.048%201.37-.058%204.04-.058zM10%200C7.284%200%206.944.012%205.878.06%202.246.227.228%202.242.06%205.877.01%206.944%200%207.284%200%2010s.012%203.057.06%204.123c.167%203.632%202.182%205.65%205.817%205.817%201.067.048%201.407.06%204.123.06s3.057-.012%204.123-.06c3.629-.167%205.652-2.182%205.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777%202.249%2017.76.228%2014.124.06%2013.057.01%2012.716%200%2010%200zm0%204.865a5.135%205.135%200%20100%2010.27%205.135%205.135%200%20000-10.27zm0%208.468a3.333%203.333%200%20110-6.666%203.333%203.333%200%20010%206.666zm5.338-9.87a1.2%201.2%200%20100%202.4%201.2%201.2%200%20000-2.4z'/%3e%3c/svg%3e" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">107</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-lime-green">3%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Total views</span>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23C4032B'%20d='M10%200C4.478%200%200%204.478%200%2010c0%205.523%204.478%2010%2010%2010%205.523%200%2010-4.477%2010-10%200-5.522-4.477-10-10-10zm3.7%2014.077c-1.75.12-5.652.12-7.402%200-1.896-.13-2.117-1.059-2.131-4.077.014-3.024.237-3.947%202.131-4.077%201.75-.12%205.652-.12%207.403%200%201.897.13%202.117%201.059%202.132%204.077-.015%203.024-.237%203.947-2.132%204.077zM8.334%208.048l4.098%201.949-4.098%201.955V8.048z'/%3e%3c/svg%3e" alt="youtube icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">1407</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='4'%3e%3cpath%20fill='%231EB589'%20fill-rule='evenodd'%20d='M0%204l4-4%204%204z'/%3e%3c/svg%3e" alt="icon up" />
+                <span class="text-lime-green">12%</span>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jean Gustave</a>.
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        const darkModeToggle = document.getElementById('dark-mode-switch-checkbox');
+        localStorage.setItem('currentTheme', 'dark');
+         //document.querySelector('html').classList.toggle(localStorage.getItem('currentTheme'))
+        darkModeToggle.addEventListener('click', e => {
+          console.log(e)
+          const currentTheme = window.localStorage.getItem('currentTheme') || 'dark';
+          localStorage.setItem('currentTheme', currentTheme);
+
+          document.rootElement.classList.toggle(currentTheme)
+
+        })
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="flex flex-col justify-center items-center w-screen min-h-screen dark:bg-black dark:text-white font-inter"
+  >
+    <main>
+      <div class="container dark:bg-dark-blue px-24 py-4">
+        <div class="flex items-center justify-between my-10">
+          <!-- HEADING -->
+          <div class="flex flex-col">
+            <h1 class="font-bold text-2xl">Social Media Dashboard</h1>
+            <p class="text-desaturate-blue text-xs font-bold">Total Followers: <span>23,004</span></p>
+          </div>
+          <!-- DARK MODE SWITCH -->
+          <div class="flex items-center">
+            <label for="dark-mode-switch" class="flex relative gap-4 font-bold after:w-[35px] after:content-[''] after:h-[20px] after:order-2 
+            after:rounded-full before:content-[''] before:h-[15px] before:w-[15px] before:z-10 before:dark:bg-black before:bg-white before:absolute before:right-0 before:top-[calc(10px_-_7.5px)] before:rounded-full
+             after:bg-gradient-toggle"  id="dark-mode-switch-checkbox"> Dark Mode</label>
+            <input class="hidden"
+              type="checkbox"
+              name="dark-mode-switch"
+            />
+          </div>
+        </div>
+        <!-- CARDS -->
+        <div class="grid gap-8 grid-cols-auto-fit [&_img]:object-contain lg:min-w-[1000px] [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
+          
+            <div class="flex flex-col items-center  rounded-md dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6 border-facebook border-t-4  card gap-6">
+              <div class="flex gap-2">
+                <img src="assets/icon-facebook.svg" alt="fabook icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@nathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue">
+                <span class="font-bold text-4xl text-black dark:text-white">1987</span> <br />
+                <span class="tracking-[.2em] text-xs">followers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-lime-green font-bold">
+                <img src="assets/icon-up.svg" alt="icon up" /> 12 Today
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center  rounded-md dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6 border-facebook border-t-4  card gap-6">
+              <div class="flex gap-2">
+                <img src="assets/icon-facebook.svg" alt="fabook icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@nathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue">
+                <span class="font-bold text-4xl text-black dark:text-white">1044</span> <br />
+                <span class="tracking-[.2em] text-xs">followers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-lime-green font-bold">
+                <img src="assets/icon-up.svg" alt="icon up" /> 99 Today
+              </div>
+            </div>
+            <div class="flex flex-col items-center dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6  rounded-md px-8 py-6 border-facebook border-t-4 [border-image:linear-gradient(90deg,_hsl(37,_97%,_70%),hsl(329,_70%,_58%))] [border-image-slice:_1_!important]  card gap-6">
+              <div class="flex gap-2">
+                <img src="assets/icon-instagram.svg" alt="fabook icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@realnathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue text-center">
+                <span class="font-bold text-4xl text-black dark:text-white">11K</span> <br />
+                <span class="tracking-[.2em] text-xs">followers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-lime-green font-bold">
+                <img src="assets/icon-up.svg" alt="icon up" /> 1099 Today
+              </div>
+            </div>
+            <div class="flex flex-col items-center dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6  rounded-md px-8 py-6 border-t-4 border-t-bright-red  card gap-6">
+              <div class="flex gap-2">
+                <img src="assets/icon-youtube.svg" alt="youtube icon" />
+                <div class="dark:text-desaturate-blue text-text-dark-blue">@realnathanf</div>
+              </div>
+              <div class="uppercase text-desaturate-blue text-center">
+                <span class="font-bold text-4xl text-black dark:text-white">8239</span> <br />
+                <span class="tracking-[.2em] text-xs">subscribers</span>
+              </div>
+              <div class="text-xs flex items-center gap-1 text-bright-red font-bold">
+                <img src="assets/icon-down.svg" alt="icon up" /> 144 Today
+              </div>
+            </div>
+          
+        
+        </div>
+
+        <!-- OVERVIEW-->
+        <h2 class="font-bold mb-4 mt-12">Overview Today</h2>
+        <div class="grid grid-cols-auto-fit justify-items-start gap-8 [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Page views</span>
+              <img src="assets/icon-facebook.svg" alt="" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">87</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-up.svg" alt="icon up" />
+                <span class="text-lime-green">3%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Likes</span>
+              <img src="assets/icon-facebook.svg" alt="" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">52</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-down.svg" alt="icon up" />
+                <span class="text-bright-red">2%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Page views</span>
+              <img src="assets/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">5462</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-up.svg" alt="icon up" />
+                <span class="text-lime-green">2257%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Profile views</span>
+              <img src="assets/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">52K</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-up.svg" alt="icon up" />
+                <span class="text-lime-green">1375%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Retweets</span>
+              <img src="assets/icon-twitter.svg" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">117</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-up.svg" alt="icon up" />
+                <span class="text-lime-green">303%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Likes</span>
+              <img src="assets/icon-twitter.svg" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">52</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-down.svg" alt="icon up" />
+                <span class="text-bright-red">3%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Likes</span>
+              <img src="assets/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">107</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-up.svg" alt="icon up" />
+                <span class="text-lime-green">3%</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full lg:min-w-[226px] card">
+            <div class="flex justify-between">
+              <span class="text-desaturate-blue font-bold text-sm">Total views</span>
+              <img src="assets/icon-youtube.svg" alt="youtube icon" />
+            </div>
+            <div class="flex justify-between items-end">
+              <strong class="text-2xl">1407</strong>
+              <div class="flex items-center font-bold text-xs">
+                <img src="assets/icon-up.svg" alt="icon up" />
+                <span class="text-lime-green">12%</span>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jean Gustave</a>.
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        const darkModeToggle = document.getElementById('dark-mode-switch-checkbox');
+        localStorage.setItem('currentTheme', 'dark');
+         //document.querySelector('html').classList.toggle(localStorage.getItem('currentTheme'))
+        darkModeToggle.addEventListener('click', e => {
+          console.log(e)
+          const currentTheme = window.localStorage.getItem('currentTheme') || 'dark';
+          localStorage.setItem('currentTheme', currentTheme);
+
+          document.rootElement.classList.toggle(currentTheme)
+
+        })
+      })
+    </script>
+  </body>
+</html>

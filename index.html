@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,29 +28,31 @@
     </style>
   </head>
   <body
-    class="flex flex-col justify-center items-center w-screen min-h-screen dark:bg-black dark:text-white font-inter"
+    class="flex flex-col justify-center items-center w-screen min-h-screen dark:bg-[hsl(225,17%,14%)] dark:text-white font-inter"
   >
     <main>
-      <div class="container dark:bg-dark-blue px-24 py-4">
-        <div class="flex items-center justify-between my-10">
+      <div class="container relative dark:bg-dark-blue px-24 py-4">
+        <div class="absolute top-0 right-0 h-64 -Z-10 w-full z-10 dark:bg-very-dark-blue-bg bg-[hsl(230,75%,98%)]"></div>
+        <div class="flex items-center justify-between my-10 z-20 relative">
           <!-- HEADING -->
           <div class="flex flex-col">
             <h1 class="font-bold text-2xl">Social Media Dashboard</h1>
             <p class="text-desaturate-blue text-xs font-bold">Total Followers: <span>23,004</span></p>
           </div>
           <!-- DARK MODE SWITCH -->
-          <div class="flex items-center">
-            <label for="dark-mode-switch" class="flex relative gap-4 font-bold after:w-[35px] after:content-[''] after:h-[20px] after:order-2 
-            after:rounded-full before:content-[''] before:h-[15px] before:w-[15px] before:z-10 before:dark:bg-black before:bg-white before:absolute before:right-0 before:top-[calc(10px_-_7.5px)] before:rounded-full
-             after:bg-gradient-toggle"  id="dark-mode-switch-checkbox"> Dark Mode</label>
+          <div class="flex items-center [&>input:checked_+_label]:before:translate-x-[-20px]">
             <input class="hidden"
-              type="checkbox"
-              name="dark-mode-switch"
-            />
+            type="checkbox"
+            name="dark-mode-switch"
+          />
+            <label for="dark-mode-switch" class="flex relative gap-4 font-bold after:w-[35px] after:content-[''] after:h-[20px] after:order-2 
+            after:rounded-full before:content-[''] before:h-[15px] before:w-[15px] before:z-10 before:dark:bg-black before:bg-white before:absolute before:right-0 before:transition-all before:top-[calc(10px_-_7.5px)] before:rounded-full
+             after:dark:bg-gradient-toggle after:bg-bg-toggle-track"  id="dark-mode-switch-checkbox"> Dark Mode</label>
+
           </div>
         </div>
         <!-- CARDS -->
-        <div class="grid gap-8 grid-cols-auto-fit [&_img]:object-contain lg:min-w-[1000px] [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
+        <div class="grid gap-8 grid-cols-auto-fit relative z-20 [&_img]:object-contain lg:min-w-[1000px] [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
           
             <div class="flex flex-col items-center  rounded-md dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6 border-facebook border-t-4  card gap-6">
               <div class="flex gap-2">
@@ -239,14 +241,19 @@
     <script>
       window.addEventListener('DOMContentLoaded', function() {
         const darkModeToggle = document.getElementById('dark-mode-switch-checkbox');
-        localStorage.setItem('currentTheme', 'dark');
-         //document.querySelector('html').classList.toggle(localStorage.getItem('currentTheme'))
+        const toggleCheckBox = document.querySelector("[name='dark-mode-switch']");
+      
         darkModeToggle.addEventListener('click', e => {
           console.log(e)
           const currentTheme = window.localStorage.getItem('currentTheme') || 'dark';
           localStorage.setItem('currentTheme', currentTheme);
 
-          document.rootElement.classList.toggle(currentTheme)
+          toggleCheckBox.checked = !toggleCheckBox.checked;
+          if(toggleCheckBox.checked) {
+            document.querySelector('html').classList.remove('dark')
+          } else {
+            document.querySelector('html').classList.add('dark')
+          }
 
         })
       })

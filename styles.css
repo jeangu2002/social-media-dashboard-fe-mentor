@@ -606,20 +606,12 @@ video {
   top: 0px;
 }
 
-.-z-10{
-  z-index: -10;
-}
-
-.-z-20{
-  z-index: -20;
+.z-10{
+  z-index: 10;
 }
 
 .z-20{
   z-index: 20;
-}
-
-.z-10{
-  z-index: 10;
 }
 
 .my-10{
@@ -651,10 +643,6 @@ video {
   height: 16rem;
 }
 
-.h-0{
-  height: 0px;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -669,6 +657,14 @@ video {
 
 .min-w-full{
   min-width: 100%;
+}
+
+.min-w-\[1000px\]{
+  min-width: 1000px;
+}
+
+.min-w-\[850px\]{
+  min-width: 850px;
 }
 
 .grid-cols-auto-fit{
@@ -741,14 +737,14 @@ video {
   border-top-color: hsl(356 69% 56% / var(--tw-border-opacity));
 }
 
-.bg-light-grayish-blue{
-  --tw-bg-opacity: 1;
-  background-color: hsl(227 47% 96% / var(--tw-bg-opacity));
-}
-
 .bg-\[hsl\(230\2c 75\%\2c 98\%\)\]{
   --tw-bg-opacity: 1;
   background-color: hsl(230 75% 98% / var(--tw-bg-opacity));
+}
+
+.bg-light-grayish-blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(227 47% 96% / var(--tw-bg-opacity));
 }
 
 .p-6{
@@ -763,11 +759,6 @@ video {
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-6{
@@ -954,11 +945,19 @@ video {
   .lg\:min-w-\[226px\]{
     min-width: 226px;
   }
+
+  .lg\:min-w-\[8500px\]{
+    min-width: 8500px;
+  }
+
+  .lg\:min-w-\[850px\]{
+    min-width: 850px;
+  }
 }
 
-.dark\:bg-black:where(.dark, .dark *){
+.dark\:bg-\[hsl\(225\2c 17\%\2c 14\%\)\]:where(.dark, .dark *){
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: hsl(225 17% 14% / var(--tw-bg-opacity));
 }
 
 .dark\:bg-dark-blue:where(.dark, .dark *){
@@ -971,24 +970,9 @@ video {
   background-color: hsl(228 28% 20% / var(--tw-bg-opacity));
 }
 
-.dark\:bg-very-dark-blue:where(.dark, .dark *){
-  --tw-bg-opacity: 1;
-  background-color: hsl(230 17% 14% / var(--tw-bg-opacity));
-}
-
 .dark\:bg-very-dark-blue-bg:where(.dark, .dark *){
   --tw-bg-opacity: 1;
   background-color: hsl(232 19% 15% / var(--tw-bg-opacity));
-}
-
-.dark\:bg-blue-700:where(.dark, .dark *){
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-\[hsl\(225\2c 17\%\2c 14\%\)\]:where(.dark, .dark *){
-  --tw-bg-opacity: 1;
-  background-color: hsl(225 17% 14% / var(--tw-bg-opacity));
 }
 
 .dark\:text-desaturate-blue:where(.dark, .dark *){

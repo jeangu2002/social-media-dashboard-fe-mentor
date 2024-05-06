@@ -30,29 +30,30 @@
   <body
     class="flex flex-col justify-center items-center w-screen min-h-screen dark:bg-[hsl(225,17%,14%)] dark:text-white font-inter"
   >
-    <main>
-      <div class="container relative dark:bg-dark-blue px-24 pt-4 pb-10">
+    <main class="w-[clamp(226px,90%,100vw)]">
+      <div class="container relative dark:bg-dark-blue px-4 lg:px-24 pt-4 pb-10">
         <div class="absolute top-0 right-0 h-64 -Z-10 w-full z-10 dark:bg-very-dark-blue-bg bg-[hsl(230,75%,98%)]"></div>
-        <div class="flex items-center justify-between my-10 z-20 relative">
+        <div class="flex flex-col gap-4 sm:flex-row items-center justify-between my-10 z-20 relative">
           <!-- HEADING -->
-          <div class="flex flex-col">
+          <div class="flex flex-col self-start">
             <h1 class="font-bold text-2xl">Social Media Dashboard</h1>
             <p class="text-desaturate-blue text-xs font-bold">Total Followers: <span>23,004</span></p>
           </div>
+          <hr class="h-px w-full sm:hidden bg-gray-200 border-0 dark:bg-gray-800" />
           <!-- DARK MODE SWITCH -->
-          <div class="flex items-center [&>input:checked_+_label]:before:translate-x-[-20px]">
+          <div class="flex items-center justify-between w-full sm:w-[unset] [&>input:checked_+_label]:before:translate-x-[-20px]">
             <input class="hidden"
             type="checkbox"
             name="dark-mode-switch"
           />
-            <label for="dark-mode-switch" class="flex relative gap-4 font-bold after:w-[35px] after:content-[''] after:h-[20px] after:order-2 
+            <label for="dark-mode-switch" class="flex justify-between relative gap-4 flex-1 sm:flex-0 font-bold after:w-[35px] after:content-[''] after:h-[20px] after:order-2 
             after:rounded-full before:content-[''] before:h-[15px] before:w-[15px] before:z-10 before:dark:bg-black before:bg-white before:absolute before:right-0 before:transition-all before:top-[calc(10px_-_7.5px)] before:rounded-full
              after:dark:bg-gradient-toggle after:bg-bg-toggle-track"  id="dark-mode-switch-checkbox"> Dark Mode</label>
 
           </div>
         </div>
         <!-- CARDS -->
-        <div class="grid gap-8 grid-cols-auto-fit relative z-20 [&_img]:object-contain lg:min-w-[850px] [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
+        <div class="grid gap-8 grid-cols-auto-fit relative z-20 [&_img]:object-contain [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
           
             <div class="flex flex-col items-center  rounded-md dark:bg-dark-desaturated-blue bg-light-grayish-blue px-8 py-6 border-facebook border-t-4  card gap-6">
               <div class="flex gap-2">
@@ -113,7 +114,7 @@
 
         <!-- OVERVIEW-->
         <h2 class="font-bold mb-4 mt-12">Overview Today</h2>
-        <div class="grid grid-cols-auto-fit justify-items-start gap-8 lg:min-w-[850px]: [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
+        <div class="grid grid-cols-auto-fit justify-items-start gap-8  [&>*:hover]:dark:bg-dark-desaturated-blue-hover  [&>*:hover]:bg-light-grayish-blue-hover [&>*]:cursor-pointer">
           <div class="flex flex-col p-6 gap-7 dark:bg-dark-desaturated-blue bg-light-grayish-blue rounded-md min-w-full  card">
             <div class="flex justify-between">
               <span class="text-desaturate-blue font-bold text-sm">Page views</span>
